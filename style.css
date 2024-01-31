@@ -161,6 +161,36 @@ nav a:hover, nav li.active a {
     font-weight: bold;
 }
 
+footer {
+    margin: 65px 0;
+}
+
+footer .email-link {
+    text-decoration: none;
+    color: #888;
+    font-size: 24px;
+    text-align: center;
+}
+
+footer .email-link:hover {
+    color: rgb(41, 37, 37);
+        font-weight: bold;
+}
+
+
+
+footer .social-links a {
+    margin: 0 20px;
+    padding: 15px;
+    font-size: 20px;
+    transition: all .3s ease;
+
+}
+
+footer.social-links a:hover {
+    color: #888;
+    background-color: rgb(41, 37, 37);
+}
 
 
 @media screen and (max-width: 060px) {
