@@ -131,6 +131,36 @@ textarea {
 
 }
 
+nav {
+    padding: 20px 0;
+    
+}
+nav li{
+    display: inline;
+    list-style: none;
+    margin-left: 5px;
+    line-height: 40px;
+    margin-left: 10px;
+}
+
+nav ul {
+    float: right;
+    padding: 0;
+
+}
+
+nav a{
+    text-decoration: none;
+    color: #888;
+    transition: all .3s ease;
+}
+
+
+nav a:hover, nav li.active a {
+    color: rgb(41, 37, 37);
+    font-weight: bold;
+}
+
 
 
 @media screen and (max-width: 060px) {
@@ -157,6 +187,15 @@ textarea {
     .text {
         font-size: 0.8rem;
     }
+
+    .nav a{
+        font-size: 12px;
+    }
+
+    .nav ul {
+        justify-content: center;
+    }
+
 
     .project-description {
         padding: 0;
