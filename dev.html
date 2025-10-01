@@ -3,114 +3,131 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <title>Dawn-Louise Hughes - In Development Projects</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="work.css" />
+
+    <!-- Bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    <title>Dawn-Louise Hughes- Front End Developer</title>
-
+    
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap"
       rel="stylesheet"
     />
+
+    <!-- FontAwesome -->
     <script
       src="https://kit.fontawesome.com/030f0a908c.js"
       crossorigin="anonymous"
     ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
-    <body>
-      <div class="container">
-        <nav class="d-flexjustify-content-between">
-          <img src="" />
-          <ul>
-            <li><a href="index.html">Homepage</a></li>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="work.html">Projects</a></li>
-            <li class="active"><a href="dev.html">In development</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-
-      <div class="hero">
-        <h3 class="mb-5">Frontend Developer</h3>
-        <h1>Dawn-Louise Hughes</h1>
-
-        <h4>London</h4>
-
-        <a
-          href="malito:dawnhughesnow@gmail.com"
-          class="email-link"
-          target="_blank"
-        >
-          Contact</a
-        >
-      </div>
-    </body>
   </head>
 
-  <div class=" mb-5 container-1">
-    <div class="row mb-5">
-    <div class="col d-none d-lg-block">
-      <img src="img/city.jpg" class="img-fluid" alt="Barcelona sunset">
+  <body>
+    <!-- Navbar -->
+    <div class="container">
+      <nav class="d-flex justify-content-between align-items-center">
+        <img src="" alt="Logo" />
+        <ul class="nav-links">
+          <li><a href="index.html">Homepage</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="work.html">Projects</a></li>
+          <li class="active"><a href="dev.html">In development</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </div>
 
-    <div class="col">
-    <div class="text-center text-md-start">
-     <div class="project-description">
-     <h3 class="mb-5">Travel Website</h3>
-     <p class="mb-5">The project involves creating a website dedicated to providing comprehensive information 
-      about the holiday destination Barcelona. The website will leverage skills in embedding content using HTML, 
-      Javascript, and CSS to enhance the user experience. Key features include embedded Instagram content to showcase 
-      real-time visuals, Google Maps integration for interactive location mapping, and strategically placed links to 
-      external websites for additional details. Additionally, a strong focus on Search Engine Optimization (SEO) will 
-      be employed to ensure the website ranks well on search engines, enhancing its visibility and 
-      accessibility to potential visitors seeking information about Barcelona.</p>
+    <!-- Projects Section -->
+    <section class="container my-5">
+      <h2 class="text-center mb-5">Projects in Development</h2>
 
-       <a href="https://travelbarcelona2024.netlify.app/" target="_blank" class="btn btn-outline-dark" >Try it out</a>
-       </div>
-       </div>
-       </div> 
+      <!-- Project Card 1 -->
+      <div class="project-card">
+        <img src="img/city.jpg" alt="Travel Website" class="project-img">
+
+        <!-- Skills -->
+        <div class="skills-grid">
+          <div class="skill-item">
+            <i class="fa-brands fa-html5"></i>
+            <p>HTML</p>
+          </div>
+          <div class="skill-item">
+            <i class="fa-brands fa-css3-alt"></i>
+            <p>CSS</p>
+          </div>
+          <div class="skill-item">
+            <i class="fa-brands fa-js"></i>
+            <p>JavaScript</p>
+          </div>
+        </div>
+
+        <div class="project-description">
+          <h3>Travel Website</h3>
+          <p>
+            This project provides comprehensive information about Barcelona with interactive maps, embedded Instagram content, and SEO-friendly features. It’s built with HTML, CSS, and JavaScript to provide an intuitive user experience.
+          </p>
+          <a href="https://travelbarcelona2024.netlify.app/" target="_blank" class="btn btn-branding">Try it out</a>
+          <a href="https://github.com/FedDawb/travel-website" target="_blank" class="btn btn-outline-dark mt-2">View on GitHub</a>
+        </div>
       </div>
-     </div>
-    </div>
- </div>
 
-   <div class=" mb-5 container-1">
-    <div class="row mb-5">
-    <div class="col d-none d-lg-block">
-      <img src="img/const.jpg" class="img-fluid" alt="Construction">
-    </div>
+      <!-- Project Card 2 -->
+      <div class="project-card">
+        <img src="img/const.jpg" alt="AI Recipe App" class="project-img">
 
-    <div class="col">
-    <div class="text-center text-md-start">
-     <div class="project-description">
-     <h3 class="mb-5">AI Website</h3>
-     <p class="mb-5">The website under construction is an innovative generative AI recipe app designed 
-      to assist users in creating delicious meals. Leveraging advanced AI algorithms, 
-      the app suggests creative and personalized recipes and the app will generate unique and practical recipes. 
-      The user-friendly interface incorporates visually appealing design elements, making it easy for individuals to 
-      navigate and explore diverse 
-      recipe options. As the website evolves, it aims to become a go-to resource for anyone to use.</p>
+        <!-- Skills -->
+        <div class="skills-grid">
+          <div class="skill-item">
+            <i class="fa-brands fa-js"></i>
+            <p>JavaScript</p>
+          </div>
+          <div class="skill-item">
+            <i class="fa-brands fa-html5"></i>
+            <p>HTML</p>
+          </div>
+          <div class="skill-item">
+            <i class="fa-brands fa-css3-alt"></i>
+            <p>CSS</p>
+          </div>
+        </div>
 
-       <a href="" target="_blank" class="btn btn-outline-dark" >No link yet</a>
-       </div>
-       </div>
-       </div> 
+        <div class="project-description">
+          <h3>AI Recipe App</h3>
+          <p>
+            A generative AI recipe application designed to suggest creative and personalized meal ideas. The project demonstrates AI integration, user-friendly UI, and dynamic content creation.
+          </p>
+          <a href="#" class="btn btn-branding">No live link yet</a>
+          <a href="https://github.com/FedDawb/ai-recipe-app" target="_blank" class="btn btn-outline-dark mt-2">View on GitHub</a>
+        </div>
       </div>
-     </div>
-    </div>
- </div>
 
+   
+    </section>
 
-
+    <!-- Footer -->
+    <footer>
+      <div class="d-flex justify-content-center mb-4">
+        <a href="mailto:dawnhughesnow@gmail.com" class="email-link">dawnhughesnow@gmail.com</a>
+      </div>
+      <div class="social-links d-flex justify-content-center mb-4">
+        <a href=""><i class="fa-brands fa-instagram fa-lg"></i></a>
+        <a href=""><i class="fa-brands fa-linkedin fa-lg"></i></a>
+        <a href="https://github.com/FedDawb"><i class="fa-brands fa-github fa-lg"></i></a>
+      </div>
+      <p class="text-center mt-3">
+        This site was coded by Dawn-Louise Hughes and is open-sourced on 
+        <a href="https://github.com/FedDawb/Portfolio-Challenge" target="_blank">Github</a>
+      </p>
+    </footer>
+  </body>
 </html>
+

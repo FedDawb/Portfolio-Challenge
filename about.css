@@ -1,0 +1,220 @@
+
+:root {
+  --branding-color: rgb(0, 0, 0); 
+  --secondary-color: rgb(179, 174, 174);
+  --heading-font-family: 'Quicksand', sans-serif;
+  --subtle-white: #f5f5f5;
+  --accent-red: rgb(165, 4, 4); 
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base */
+body {
+  background: var(--branding-color);
+  color: var(--subtle-white);
+  font-family: var(--heading-font-family);
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: var(--heading-font-family);
+  font-weight: bold;
+  color: #222; /* dark color for readability */
+}
+
+
+/* Navbar*/
+nav {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+  padding: 20px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  margin-left: 20px; /* spacing between links */
+}
+
+nav a {
+  text-decoration: none;
+  color: #222;
+  transition: all .3s ease;
+}
+
+nav a:hover,
+nav li.active a {
+  color: var(--accent-red);
+  font-weight: bold;
+}
+
+/* About Section*/
+.about-section {
+  padding: 4rem 0;
+}
+
+.about-section h1 {
+  font-size: 2.5rem;
+  color: Black;
+  
+}
+
+.about-section h2 {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  color: Black;
+}
+
+.about-section .intro-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.skills-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.skills-list li::before {
+  content: "✔ ";
+  color: var(--accent-red);
+  margin-right: 5px;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;       
+  gap: 2rem;             
+  margin-top: 1rem;
+  justify-content: flex-start; /* align left on large screens */
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100px;          
+  text-align: center;
+}
+
+.skill-item i {
+  font-size: 2.5rem;     
+  color: var(--accent-red);
+  margin-bottom: 0.5rem;
+}
+
+.skill-item p {
+  margin: 0;
+  font-size: 1rem;
+  color: #222;           /* dark text under icons */
+  font-weight: bold;     
+}
+
+/* Center skills on smaller screens */
+@media screen and (max-width: 768px) {
+  .skills-grid {
+    justify-content: center;
+  }
+}
+
+.profile-image {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.2);
+}
+
+/* Button */
+.btn-branding {
+  border-radius: 4px;
+  color: var(--subtle-white);
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: 2px solid var(--subtle-white);
+  background: rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+}
+
+.btn-branding:hover {
+  background: var(--subtle-white);
+  color: var(--branding-color);
+}
+
+/* Footer*/
+footer {
+  background: var(--branding-color);
+  padding: 2rem 0;
+  text-align: center;
+}
+
+footer .email-link {
+  color: var(--subtle-white);
+  text-decoration: none;
+}
+
+footer .email-link:hover {
+  color: #ccc;
+}
+
+footer .social-links a {
+  color: var(--subtle-white);
+  margin: 0 20px;
+  font-size: 2rem;
+  transition: color 0.3s ease;
+}
+
+footer .social-links a:hover {
+  color: var(--accent-red);
+}
+
+footer p {
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  color: var(--secondary-color);
+}
+
+footer p a {
+  color: var(--accent-red);
+  text-decoration: none;
+}
+
+footer p a:hover {
+  text-decoration: underline;
+}
+
+
+@media screen and (max-width: 768px) {
+  .about-section {
+    text-align: center;
+  }
+
+  .about-section h1 {
+    font-size: 2rem;
+  }
+
+  .about-section h2 {
+    font-size: 1.3rem;
+  }
+
+  .intro-text {
+    font-size: 1rem;
+  }
+
+  .profile-image {
+    margin-top: 2rem;
+  }
+}
