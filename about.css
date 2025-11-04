@@ -155,12 +155,20 @@ nav li.active a {
 }
 
 
-
 .profile-image {
-  max-width: 100%;
-  border-radius: 10px;
-  box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.2);
+    max-width: 100%;
+    border-radius: 50%; /* Makes it a perfect circle */
+    border: 4px solid var(--accent-red); /* Adds a red border using your CSS variable */
+    box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.2);
+    object-fit: cover; /* Ensures the image scales nicely inside the circle */
+    filter: grayscale(100%); /* Makes the image black and white */
+    transition: filter 0.3s ease; /* optional smooth effect */
 }
+
+.profile-image:hover {
+    filter: grayscale(0%);
+}
+
 
 /* Button */
 .btn-branding {
