@@ -112,7 +112,7 @@ nav li.active a {
 }
 
 .skills-list li::before {
-  content: "✔ ";
+  content: " - ";
   color: var(--accent-red);
   margin-right: 5px;
 }

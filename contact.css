@@ -108,7 +108,7 @@ nav li.active a {
 /* Hero Section */
 .hero {
   text-align: center;
-  padding: 6rem 2rem;
+  padding: 8rem 4rem;
   background: var(--branding-color); /* black background */
   color: var(--subtle-white); /* soft white text */
 }
