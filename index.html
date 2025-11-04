@@ -4,8 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <!-- Your other scripts -->
+   <script src="index.js"></script>
+
+
 
     <!--Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -30,75 +35,94 @@
     </head>
     <body>
 
-        <!--Navbar-->
+       <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
   <div class="container">
-      <nav class="d-flexjustify-content-between">
-        
-        <ul>
-          <li class="active"><a href="index.html">Homepage</a></li>
-          <li><a href="about.html">About Me</a></li>
-          <li><a href="work.html">Projects</a></li>
-          <li><a href="dev.html">In development</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+    <a class="navbar-brand" href="index.html">Dawn-Louise Hughes</a>
+    <!-- Hamburger button for mobile -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Navbar links -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Homepage</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="work.html">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="dev.html">In development</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
     </div>
+  </div>
+</nav>
 
-     <!--Hero section-->
-  <header class="hero landing-hero">
-      <video autoplay muted loop playsinline class="hero-video">
-       <source src="Web-Dev.mp4" type="video/mp4">
-       Your browser does not support the video tag.
-    </video>
 
-  
-  </header>
-<div class="hero-content">
+   <!-- Hero section -->
+<header class="hero landing-hero">
+  <!-- Desktop & Tablet video -->
+  <video autoplay muted loop playsinline class="hero-video desktop-video">
+    <source src="Web-Dev.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Small screen video -->
+  <video autoplay muted loop playsinline class="hero-video mobile-video">
+    <source src="smallscreen.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</header>
+
+  <div class="hero-content">
       <h1>&lt;Hello/&gt; I'm Dawn </h1>
       <p class="tagline"><span id="typing"></span></p>
       <a href="work.html" class="btn btn-branding">See My Work</a>
   </div>
 
+
    
     
-<footer>
-<div class="d-flex justify-content-center mb-5">
-  <a href="malito:dawnhughesnow@gmail.com" class="email-link">dawnhughesnow@gmail.com</a>
-  </div>
-<div class="social-links d-flex justify-content-center mb-5">
-  <a href="https://www.instagram.com/yourprofile" target="_blank" rel="noopener noreferrer">
-    <i class="fa-brands fa-instagram fa-lg" style="color: rgb(41, 37, 37);"></i>
-  </a>
-  <a href="https://www.linkedin.com/in/dawn-hughes-a033922b2/" target="_blank" rel="noopener noreferrer">
-    <i class="fa-brands fa-linkedin fa-lg" style="color: rgb(41, 37, 37);"></i>
-  </a>
-  <a href="https://github.com/FedDawb" target="_blank" rel="noopener noreferrer">
-    <i class="fa-brands fa-github fa-lg" style="color: rgb(41, 37, 37);"></i>
-  </a>
-</div>
+    <!-- Footer -->
+    <footer>
+      <div class="d-flex justify-content-center mb-5">
+        <a href="mailto:dawnhughesnow@gmail.com" class="email-link">
+          dawnhughesnow@gmail.com
+        </a>
+      </div>
+
+      <div class="social-links d-flex justify-content-center mb-5">
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-instagram fa-lg"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/dawn-hughes-a033922b2/" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-linkedin fa-lg"></i>
+        </a>
+        <a href="https://github.com/FedDawb" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-github fa-lg"></i>
+        </a>
+      </div>
+
+      <p class="text-center mt-5">
+        This site was coded by Dawn-Louise Hughes and is open-sourced on
+        <a href="https://github.com/FedDawb/Portfolio-Challenge" target="_blank">
+          GitHub
+        </a>
+      </p>
+    </footer>
+  </body>
+</html>
 
 
-      <p class="text-center mt-3"> This site was coded by Dawn-Louise Hughes and is open-sourced on <a href="https://github.com/FedDawb/Portfolio-Challenge" target="_blank">Github</a></p>
-
-</footer>
-
-<script>
-  const text = "Frontend Developer | Data & Cyber Security Enthusiast";
-  let index = 0;
-
-  function type() {
-    const element = document.getElementById("typing");
-    if (index < text.length) {
-      element.innerHTML += text.charAt(index);
-      index++;
-      setTimeout(type, 100);
-    } else {
-      element.innerHTML = text; // Keep final text
-    }
-  }
-
-  window.onload = type;
-</script>
 
   </body>
 </html>

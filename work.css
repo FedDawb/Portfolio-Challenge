@@ -6,6 +6,22 @@
   --accent-red: rgb(165, 4, 4); 
 }
 
+/* Full-page background video */
+.background-video {
+  position: fixed;      /* stays fixed behind content */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;    /* cover whole viewport */
+  z-index: -1;          /* behind all other content */
+  filter: brightness(50%); /* dim for text contrast */
+}
+
+body, h1, h2, h3, p, a, li, .project-card, .skills-grid, .skill-item, footer p, footer .email-link {
+  color: #fff !important;
+}
+
 /* Reset */
 * {
   margin: 0;
@@ -27,6 +43,13 @@ h1, h2, h3 {
   color: var(--subtle-white);
 }
 
+#mainNav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  transition: top 0.3s;
+}
 /* Navbar */
 nav {
   width: 100%;
@@ -146,11 +169,13 @@ nav li.active a {
 
 
 
-/* Footer */
+/* Footer*/
 footer {
   background: var(--branding-color);
   padding: 2rem 0;
   text-align: center;
+  position: relative;
+  z-index: 2;
 }
 
 footer .email-link {
@@ -187,6 +212,7 @@ footer p a {
 footer p a:hover {
   text-decoration: underline;
 }
+
 
 /* Responsive */
 @media screen and (max-width: 992px) {
